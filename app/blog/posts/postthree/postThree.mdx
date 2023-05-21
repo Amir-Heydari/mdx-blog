@@ -1,0 +1,21 @@
+import Barchart from './chart';
+import { CodeBlock } from "react-code-blocks";
+
+## markdown text and a chart component placed into a single .mdx file 
+
+#### this is a component that we imported from outside of the .MDX file and its been made with ```Chart.js``` and ```react-chartjs``` library
+
+<Barchart />
+
+
+## and this is a code block using react-code-block library
+
+<div className='inline-block'>
+        <CodeBlock
+        text='console.log("Hello, world!");'
+        language='javascript'
+        showLineNumbers={true}
+        />
+        </div>
+
+export default ({children}) => <div className='prose m-auto'>{children}</div>
